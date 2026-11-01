@@ -1,0 +1,91 @@
+{
+  "name": "Buoy",
+  "scopeName": "source.buoy",
+  "fileTypes": [
+    "bui"
+  ],
+  "patterns": [
+    {
+      "name": "comment.line.documentation.buoy",
+      "match": "^\\s*'''.*$"
+    },
+    {
+      "name": "comment.line.buoy",
+      "match": "(?:'|//).*$"
+    },
+    {
+      "name": "comment.block.buoy",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
+      "name": "string.quoted.double.buoy",
+      "begin": "\"",
+      "end": "\"|$",
+      "patterns": [
+        {
+          "name": "constant.character.escape.buoy",
+          "match": "\\\\[nrt\"\\\\]"
+        },
+        {
+          "name": "invalid.illegal.escape.buoy",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "keyword.control.directive.buoy",
+      "match": "(?i:^\\s*#(?:If|ElseIf|Else|End\\s+If|Define|Undef|Error|Warning)\\b)"
+    },
+    {
+      "name": "constant.numeric.buoy",
+      "match": "\\b[0-9]+(?:\\.[0-9]+)?(?:[eE][+-]?[0-9]+)?\\b"
+    },
+    {
+      "match": "(?i:\\b(Function|Sub)\\s+([A-Za-z_][A-Za-z0-9_]*))",
+      "captures": {
+        "1": {
+          "name": "keyword.declaration.buoy"
+        },
+        "2": {
+          "name": "entity.name.function.buoy"
+        }
+      }
+    },
+    {
+      "match": "(?i:\\b(Class|Interface|Structure|Enum)\\s+([A-Za-z_][A-Za-z0-9_]*))",
+      "captures": {
+        "1": {
+          "name": "keyword.declaration.buoy"
+        },
+        "2": {
+          "name": "entity.name.type.buoy"
+        }
+      }
+    },
+    {
+      "name": "constant.language.buoy",
+      "match": "(?i:\\b(?:False|Nil|True)\\b)"
+    },
+    {
+      "name": "storage.type.buoy",
+      "match": "(?i:\\b(?:Array|Boolean|Closure|Double|Int8|Int16|Int32|Int64|Integer|Optional|Result|String|UInt8|UInt16|UInt32|UInt64)\\b)"
+    },
+    {
+      "name": "keyword.control.buoy",
+      "match": "(?i:\\b(?:Case|Catch|Continue|Do|Each|Else|ElseIf|End|Exit|Finally|For|If|Loop|Next|Return|Select|Then|Throw|Try|Until|Wend|While)\\b)"
+    },
+    {
+      "name": "keyword.declaration.buoy",
+      "match": "(?i:\\b(?:Class|Const|Declare|Delegate|Dim|Enum|Event|Flags|Function|Get|Handle|Implements|Import|Inherits|Interface|Optional|Overrides|Packed|ParamArray|Private|Property|Protected|Public|Sequential|Set|Shared|Structure|Sub|Var)\\b)"
+    },
+    {
+      "name": "keyword.operator.buoy",
+      "match": "(?i:\\b(?:Alias|And|As|CType|In|Is|IsA|Lib|Me|Mod|New|Not|Of|Or|Step|Super|To|TryCast|Xor)\\b)"
+    },
+    {
+      "name": "keyword.operator.symbol.buoy",
+      "match": "[+*/=<>\\\\-]+"
+    }
+  ]
+}

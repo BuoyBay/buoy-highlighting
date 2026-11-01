@@ -1,0 +1,19 @@
+{
+  "name": "@buoybay/buoy-highlighting",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./textmate": "./buoy.tmLanguage.json",
+    "./configuration": "./language-configuration.json",
+    "./monaco": "./monaco.mjs"
+  },
+  "scripts": {
+    "generate": "node generate.mjs",
+    "test": "node test.mjs"
+  },
+  "devDependencies": {
+    "monaco-editor-core": "^0.57.0",
+    "shiki": "^4.5.0"
+  }
+}
