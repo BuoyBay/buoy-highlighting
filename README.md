@@ -1,4 +1,4 @@
-# TextMate and Monaco Monarch grammars plus editor configuration for .bui source
+# TextMate and Monaco grammars for .bui
 
 `@buoybay/buoy-highlighting` supplies an authored TextMate grammar, Monaco Monarch
 rules and editor configuration for `.bui` source. It recognizes comments,
