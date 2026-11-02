@@ -31,11 +31,9 @@ the installed compiler and primary language documentation.
 Build the changed native assets and exercise the affected behavior using the
 source guide. Compiler or generator success alone does not prove runtime behavior.
 
-Test suites, fixtures and detailed reports are private/ignored for now. Maintainers
-run those suites before merge or publication; a fresh checkout is not expected to
-contain them. Include your compiler/tool versions, host/target, exact build and
+Include your compiler/tool versions, host/target, exact build and
 reproduction commands, expected behavior and observed output in the pull request.
-Do not commit private tests, generated builds, caches, credentials or machine
+Do not commit generated builds, caches, credentials or machine
 configuration. Keep the patch focused and note any unverified platforms or runtime
 prerequisites. Inventory checks alone are not build or test acceptance.
 

@@ -1,7 +1,7 @@
-# Buoy syntax highlighting for TextMate and Monaco
+# TextMate and Monaco Monarch grammars plus editor configuration for .bui source
 
 `@buoybay/buoy-highlighting` supplies an authored TextMate grammar, Monaco Monarch
-rules and editor configuration for Buoy source. It recognizes Buoy's comments,
+rules and editor configuration for `.bui` source. It recognizes comments,
 backslash-escaped strings, conditional directives, declarations and vocabulary.
 It provides lexical highlighting rather than compiler diagnostics or completion.
 
@@ -45,7 +45,5 @@ On your own machine, install Buoy and run:
 ```sh
 buoy ai init --both
 ```
-
-The generated agent files and editor settings stay local and are ignored by Git.
 
 [Contributing](CONTRIBUTING.md) · [License](LICENSE)

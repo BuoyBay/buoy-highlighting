@@ -71,5 +71,5 @@ node generate.mjs
 npm pack --dry-run
 ```
 
-Maintainers run the private tokenizer validation suite before release. No browser
-or website deployment is required to generate the package assets.
+Review the generated grammar and exercise changed tokenization in a consumer.
+Generating package assets requires no browser or website deployment.
