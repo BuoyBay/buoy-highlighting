@@ -38,12 +38,4 @@ assets are JavaScript/editor integrations, not a Buoy compiler package. Current
 numeric coverage is decimal integers, fractions and exponents; grammar coverage
 does not establish that a program compiles.
 
-## Local Buoy setup
-
-On your own machine, install Buoy and run:
-
-```sh
-buoy ai init --both
-```
-
 [Contributing](CONTRIBUTING.md) · [License](LICENSE)
